@@ -1,4 +1,4 @@
-class Caddy < Formula
+class CaddyCloudflare < Formula
   desc "Powerful, enterprise-ready, open source web server with automatic HTTPS"
   homepage "https://caddyserver.com/"
   url "https://github.com/caddyserver/caddy/archive/refs/tags/v2.9.1.tar.gz"
