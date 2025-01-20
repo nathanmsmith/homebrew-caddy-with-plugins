@@ -17,7 +17,7 @@ class CaddyCloudflare < Formula
     revision = build.head? ? version.commit : "v#{version}"
 
     resource("xcaddy").stage do
-      system "go", "run", "cmd/xcaddy/main.go", "build", revision, "--output", bin/"caddy", "--with", "https://github.com/caddy-dns/cloudflare"
+      system "go", "run", "cmd/xcaddy/main.go", "build", revision, "--output", bin/"caddy", "--with", "github.com/caddy-dns/cloudflare"
     end
 
     generate_completions_from_executable("go", "run", "cmd/caddy/main.go", "completion")
